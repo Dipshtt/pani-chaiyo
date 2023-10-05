@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web Appliacrion For Water Delivery</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section statrs  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pani Chaiyo</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#services">Services</a>
+         <a href="#order">Order</a>
+         <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="icons">
+         <div id="services-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>1l Water bottle<span>Rs 20/- x 3</p>
+         <p>20l Water jar<span>Rs 60/- x 2</p>
+         <p>Water jar Combo<span>Rs 60/- x 50</p>
+         <p>4000l Water tank<span>Rs 3000/- x 2</p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>Placed on : <span>4/27/2022</span></p>
+         <p>Name : <span>Dipesh Tha Shrestha</spamn></p>
+         <p>Number : <span>1234567890</span></p>
+         <p>Address : <span> Khasni, Bode- 7 Bhaktapur, Nepal</span><p>
+         <p>Payment Method : <span> Cash On Delivery</span></p>
+         <p>Your Orders : <span> 1l water bottle, 20l water bar , Water Jar Combo, 2000l water tank</sapn></p>
+         <p>Total Price : <span> Rs 1000</span></p>
+         <p>Payment Status : <span style="color: var(--red);">Pending</span></p>
+      </div>
+
+      <div class="box">
+         <p>Placed on : <span>4/27/2022</span></p>
+         <p>Name : <span>Dipesh Tha Shrestha</spamn></p>
+         <p>Number : <span>1234567890</span></p>
+         <p>Address : <span> Khasni, Bode- 7 Bhaktapur, Nepal</span><p>
+         <p>Payment Method : <span> Cash On Delivery</span></p>
+         <p>Your Orders : <span> 1l water bottle, 20l water bar , 2000l water tank, 7000 l water tank,</sapn></p>
+         <p>Total Price : <span> Rs 1000</span></p>
+         <p>Payment Status : <span style="color: var(--red);">Pending</span></p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/1.png" alt="">
+         <div class="content">
+            <p>Water Tank<span>( Rs3000/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/2.png" alt="">
+         <div class="content">
+            <p>Water Bottle<span>( RS20/- x 3 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/3.png" alt="">
+         <div class="content">
+            <p>Water Jar<span>( Rs60/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/111.png" alt="">
+         <div class="content">
+            <p>Water Jar Combo<span>( Rs60/- x 50 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-back">
+
+   <section class="homes" id="homes">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/5.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pani Chaiyo</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/33.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Delivery Anywhere YOu want</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Water jar</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/4.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Frienddly Service</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/22.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Get Water on your house door</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/6.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Get 6000l ater from tank</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- Why section starts  -->
+
+<section class="why" id="why">
+
+   <h1 class="heading">Why Pani Chaiyo?</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/10.png" alt="">
+         <h3>made with love</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+      <div class="box">
+         <img src="images/33.png" alt="">
+         <h3>30 minutes delivery</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+      <div class="box">
+         <img src="images/5.png" alt="">
+         <h3>Pure Drinking Water</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+      <div class="box">
+         <img src="images/7.png" alt="">
+         <h3>Trusted by many</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+      <div class="box">
+         <img src="images/8.png" alt="">
+         <h3>Fast Service</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+      <div class="box">
+         <img src="images/9.png" alt="">
+         <h3>24 hour services</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#services" class="btn">our services</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- Why section ends -->
+
+<!-- services section starts  -->
+
+<section id="services" class="services">
+
+   <h1 class="heading">our services</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">Rs: <span>3000</span>/-</div>
+         <img src="images/1.png" alt="">
+         <div class="name">2000l Water Tank</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>20</span>/-</div>
+         <img src="images/2.png" alt="">
+         <div class="name">1l Water Bottle</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">RS: <span>60</span>/-</div>
+         <img src="images/3.png" alt="">
+         <div class="name">20l Water jar</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>70</span>/-</div>
+         <img src="images/4.png" alt="">
+         <div class="name">25l Water Jar</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>30</span>/-</div>
+         <img src="images/5.png" alt="">
+         <div class="name">Get Water Refill</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>4000-12000</span>/-</div>
+         <img src="images/6.png" alt="">
+         <div class="name">6000l to 14000l Water Tank</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>100</span>/-</div>
+         <img src="images/7.png" alt="">
+         <div class="name">Prenimum Water jar</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>280</span>/-</div>
+         <img src="images/8.png" alt="">
+         <div class="name"> Water jar Combo</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs: <span>100</span>/-</div>
+         <img src="images/10.png" alt="">
+         <div class="name">Prenimum 1l Black Water</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>1 <span>( $3/- x 2 )</span></p>
+         <p>2 <span>( $2/- x 1 )</span></p>
+         <p>3 <span>( $4/- x 4 )</span></p>
+         <p>4 <span>( $2/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>pin code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>how does it work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>can I order once a week?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how much water does a tank contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>is tank water drinkable?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/5.png" alt="">
+         <h3>Pani Chaiyo</h3>
+         <p>Pani Chaiyo is a water delivery organaization that deliver water. Pani Chaiyo was establish by Dipesh Tha Shrestha while doing his it project.</p>
+         <a href="http://devswatersolution.liveblog365.com/?i=2" class="btn">Visit Us</a>
+      </div>
+
+      <div class="box">
+         <img src="images/Dipesh.png" alt="">
+         <h3>CEO</h3>
+         <p><strong>Dipesh Tha Shrestha</strong> is the CEO this company. He is current doing IT Project. He study in Sunway International Business School</p>
+         <a href="#" class="btn">Visit His Website</a>
+      </div>
+
+      <div class="box">
+         <img src="images/herone.png" alt="">
+         <h3>Brand Ambassador</h3>
+         <p>Miss World 2023, Miss Nepal 2022 is the brand Ambassador of this company. She was Sponser by pani chaiyo during her competion of miss nepal and miss world.</p>
+         <a href="#" class="btn">Visit Her Website</a>
+      </div>
+
+      <div class="box">
+         <img src="images/Invester.png" alt="">
+         <h3>Invester 1</h3>
+         <p>She is one of the two invester of this company. She became rich after investing in this company. So if you want to be rich. Invest in this Company.</p>
+         <a href="#" class="btn">Visit Her Websites</a>
+      </div>
+
+      <div class="box">
+         <img src="images/Invester2.png" alt="">
+         <h3>Invester 2</h3>
+         <p>He is one of the two invester of this company. He became rich after investing in this company. So if you want to be rich. Invest in this Company.</p>
+         <a href="#" class="btn">Visit His Website</a>
+      </div>
+
+      <div class="box">
+         <img src="images/team.png" alt="">
+         <h3>Pani Chaiyo Team</h3>
+         <p>Pani Chaiyo team is compose of 18 member who are expert in their field. The team have contribute alot to develpo and improve this company.</p>
+         <a href="#" class="btn">Contact US</a>
+      </div>
+
+    
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <em class="fas fa-phone"></em>
+         <h3>phone number</h3>
+         <p>+123-456-7890</p>
+         <p>+977 987654321</p>
+      </div>
+
+      <div class="box">
+         <em class="fas fa-map-marker-alt"></em>
+         <h3>our address</h3>
+         <p>Bode Bhaktapur</p>
+         <p>Nepal</p>
+      </div>
+
+      <div class="box">
+         <em class="fas fa-clock"></em>
+         <h3>opening hours</h3>
+         <p>Open Every Sun-Fri</p>
+         <p>08:00am to 08:00pm</p>
+      </div>
+
+      <div class="box">
+         <em class="fas fa-envelope"></em>
+         <h3>email address</h3>
+         <p>dipsht690@gmail.com</p>
+         <p>devswatersolution@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2022 by <span>Dipesh Tha Shrestha</span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
